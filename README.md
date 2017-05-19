@@ -1,29 +1,46 @@
-# cloud-SDK-iOS
+# Paasmer Cloud SDK for iOS
 
-[![CI Status](http://img.shields.io/travis/Paasmer/cloud-SDK-iOS.svg?style=flat)](https://travis-ci.org/Paasmer/cloud-SDK-iOS)
-[![Version](https://img.shields.io/cocoapods/v/cloud-SDK-iOS.svg?style=flat)](http://cocoapods.org/pods/cloud-SDK-iOS)
-[![License](https://img.shields.io/cocoapods/l/cloud-SDK-iOS.svg?style=flat)](http://cocoapods.org/pods/cloud-SDK-iOS)
-[![Platform](https://img.shields.io/cocoapods/p/cloud-SDK-iOS.svg?style=flat)](http://cocoapods.org/pods/cloud-SDK-iOS)
+The Paasmer Cloud SDK  for iOS is an easy-to-use wrapper for the Paasmer REST API, providing a clear, type-safe way for your Android app to interact with connected products, all via the Paasmer Cloud.
+SDK features include:
+- User sign up and sign in.
+- Getting a list of a devices.
+- Reading information on devices
+- Controlling devices.
+- Publishing events from mobile devices, and subscribing to events published by devices & apps
 
-## Example
+The complete SDK sources are available to browse on GitHub, and can be downloaded as a zip file.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+For usage info, check out the app module included in the git repository.
 
-## Requirements
+###### Beta notice
+While this SDK is ready for production use, it is still under development and is currently in beta. The API is mostly stable, but may be subject to further changes prior to leaving beta. Once the SDK leaves beta, the API should never change outside of "major" version updates.
+
 
 ## Installation
 
-cloud-SDK-iOS is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+The iOS-cloud-SDK is a cocoapod. Create a `Podfile` if you do not already have one. Information on installing cocoapods and creating a Podfile can be found at [Cocoapods.org](http://cocoapods.org/). 
 
-```ruby
-pod "cloud-SDK-iOS"
+- Run `sudo gem install cocoapods` from the command line to install cocoapods.
+- Run `pod init` to create a Podfile.
+
+Open the Podfile and add the following dependency:
+
+```bash
+pod “iOS-cloud-SDK”, :git => "https://github.com/PaasmerIoT/iOS-Cloud-SDK"
 ```
+Save your Podfile and run 'pod install' from the command line.
 
-## Author
+After installing the pod, install.sh file can be found in iOS-cloud-SDK folder. Run the shell script by using the command line
 
-Paasmer, paasmer654@gmail.com
+```bash
+sh install.sh
+```
+Once shell script execution is completed, you will get a Paasmerfiles folder in the project directory.
+Follow the below steps to add Paasmerfiles to the project workspace.
 
-## License
+- Go to 'Target' in your project workspace.
+- Open 'Build Phases'
+- Go to compile sources
+    and add all the .swift files in Paasmerfiles folder to project workspace
 
-cloud-SDK-iOS is available under the MIT license. See the LICENSE file for more info.
+Now iOS-cloud-SDK is ready to use.
