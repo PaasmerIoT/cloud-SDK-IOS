@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'cloud-SDK-iOS'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of cloud-SDK-iOS.'
+  s.summary          = 'iOS SDK for Paasmer cloud'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+iOS SDK for Paasmer cloud.Through this you can connect to Paasmer cloud and use the services provided by them.
                        DESC
 
-  s.homepage         = 'https://github.com/Paasmer/cloud-SDK-iOS'
+  s.homepage         = 'https://github.com/PaasmerIoT/cloud-SDK-IOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Paasmer' => 'paasmer654@gmail.com' }
-  s.source           = { :git => 'https://github.com/Paasmer/cloud-SDK-iOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/PaasmerIoT/cloud-SDK-IOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
