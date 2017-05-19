@@ -1,0 +1,16 @@
+PODS:
+  - cloud-SDK-iOS (0.1.0)
+
+DEPENDENCIES:
+  - cloud-SDK-iOS (from `../`)
+
+EXTERNAL SOURCES:
+  cloud-SDK-iOS:
+    :path: ../
+
+SPEC CHECKSUMS:
+  cloud-SDK-iOS: 595f0130a7964cf70475bc12fbd80e7046e13a03
+
+PODFILE CHECKSUM: 78355199541dda6014ffd9ec924320a8ac8cdad2
+
+COCOAPODS: 1.2.1
