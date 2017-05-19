@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'cloud-SDK-iOS_Example' do
+  pod 'cloud-SDK-iOS', :path => '../'
+
+  target 'cloud-SDK-iOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
